@@ -1,19 +1,27 @@
-
 import java.awt.*;
 import java.applet.*;
- 
-public class Paintit extends Applet
+import java.awt.Color;
+import java.awt.Graphics;
+//this is where all the magic happens
+public class paintit extends Applet
 {
 	public void paint(Graphics g)
 	{
-		House.drawFloors(g);
-		House.drawRoof(g);
-		House.drawDoor(g);
-		House.drawWindows(g);
-		House.drawChimney(g);
- 		Tree.drawTrunk(g);
-  		Tree.drawLeaves(g);
-  		Background.drawSky(g);
-  		Background.drawGrass(g);
+
+
+
+
+ 	//order matters and should not be moved 	
+
+
+  		background.drawSky(g);
+				house.drawChimney(g);
+  		background.drawGrass(g);
+				house.drawFloors(g);
+				house.drawRoof(g);
+				house.drawDoor(g);
+					house.drawWindows(g);
+						Tree.drawTrunk(g);
+							Tree.drawLeaves(g);
 	}
 }
