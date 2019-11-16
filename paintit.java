@@ -11,7 +11,7 @@ public class paintit extends Applet
  	//order matters and should not be moved
 			background.drawSky(g);
 			house.drawChimney(g);
-  		background.drawGrass(g);
+  			background.drawGrass(g);
 			house.drawFloors(g);
 			house.drawRoof(g);
 			house.drawDoor(g);
